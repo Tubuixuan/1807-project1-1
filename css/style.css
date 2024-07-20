@@ -21,6 +21,18 @@ body {
   margin-left: auto;
   margin-right: auto;
   max-width: calc(100% - 48px);
+  /* Căn giữa theo trục dọc của tất cả các phần tử */
+  align-items: center;
+  /* Thêm padding cho phần tử */
+  /* Trên là 36px
+  Trái phải là 0
+  Dưới 8px */
+  padding: 36px 0 8px;
+  /* Đổi màu nền cho phần tử */
+  background-color: #fffcf4;
+  /* Ghim phần tử cố định trên đầu trang */
+  position: sticky;
+  top: -18px;
 }
 
 a {
@@ -61,20 +73,18 @@ a {
   position: absolute;
 }
 
-/* Code phần nút bấm */
-.header__signup {
-  font-size: 1.6rem;
+.header__signup a {
   color: #ffffff;
+  font-weight: 600;
+  font-size: 1.6rem;
   border-radius: 2.45rem;
-  background: black;
+  background-color: #171100;
+  display: inline-block;
+  padding: 0 16px;
+  line-height: 50px;
 }
 
-/* .header__navigation a {
+.header__signup {
+  min-width: 144px;
+  margin-left: 49px;
 }
-
-.header__navigation > a {
-}
-
-Sự khác nhau giữa hai bộ chọn như vậy*/
-
-/* Kẻ bảng phân biệt thuộc tính size và font-size */
