@@ -8,4 +8,73 @@ html {
 
 body {
   font-size: 1.6rem;
+  /* Dùng font cho toàn bộ trang */
+  font-family: "Poppins", sans-serif;
 }
+
+.header {
+  /* Xoay ngang tất cả phần tử trong một class */
+  display: flex;
+  /* Code độ rộng chung 1170 */
+  width: 1170px;
+  /* Căn phần tử vào giữa khung hình */
+  margin-left: auto;
+  margin-right: auto;
+  max-width: calc(100% - 48px);
+}
+
+a {
+  /* Xóa gạch chân dưới thẻ a */
+  text-decoration: none;
+}
+
+.header__navigation {
+  /* Đẩy tất cả phần tử sang bên phải */
+  margin-left: auto;
+  position: relative;
+}
+
+.header__navigation a {
+  /* Thay đổi màu sắc và kích thước font */
+  color: #5f5b53;
+  font-size: 1.6rem;
+  padding: 8px 21px;
+}
+
+.header__navigation--home,
+.header__navigation a:hover {
+  /* Tạo hiệu ứng khi có người dùng di chuột vào thì sẽ tự động đổ bóng */
+  color: black;
+  text-shadow: 1px 0 0 currentColor;
+}
+
+/* Tạo dấu gạch chân ở dưới nút Home */
+.header__navigation--home::after {
+  display: inline-block;
+  content: "";
+  bottom: 0px;
+  left: 21px;
+  width: 12px;
+  height: 2px;
+  border-radius: 1px;
+  background: black;
+  position: absolute;
+}
+
+/* Code phần nút bấm */
+.header__signup {
+  font-size: 1.6rem;
+  color: #ffffff;
+  border-radius: 2.45rem;
+  background: black;
+}
+
+/* .header__navigation a {
+}
+
+.header__navigation > a {
+}
+
+Sự khác nhau giữa hai bộ chọn như vậy*/
+
+/* Kẻ bảng phân biệt thuộc tính size và font-size */
